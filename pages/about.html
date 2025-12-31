@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact - Dagag Restaurant</title>
+    <title>Dagag Restaurant</title>
     <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
@@ -22,9 +22,9 @@
                 </div>
                 <ul tabindex="0"
                     class="menu menu-sm dropdown-content bg-orange-500 rounded-box z-[1] mt-3 w-52 p-2 shadow">
-                    <li><a href="home.html" class="text-white">Home</a></li>
-                    <li><a href="about.html" class="text-white">About</a></li>
-                    <li><a href="contact.html" class="text-white">Contact</a></li>
+                    <li><a href="../pages/home.html" class="text-white">Home</a></li>
+                    <li><a href="../pages/about.html" class="text-white">About</a></li>
+                    <li><a href="../pages/contact.html" class="text-white">Contact</a></li>
                     <li>
                         <hr class="my-1 border-white/30">
                     </li>
@@ -35,16 +35,16 @@
             <a
                 class="btn btn-ghost text-xl md:text-3xl text-white hover:text-white hover:bg-transparent cursor-pointer flex items-center gap-2">
                 <div class="w-10 h-10 rounded-full overflow-hidden">
-                    <img alt="Dagag Restaurant Logo" src="logo.png" class="w-full h-full object-cover" />
+                    <img alt="Dagag Restaurant Logo" src="../images/logo.png" class="w-full h-full object-cover" />
                 </div>
                 <span>Dagag</span>
             </a>
         </div>
         <div class="navbar-end hidden lg:flex text-white">
             <ul class="menu menu-horizontal px-1">
-                <li><a href="home.html" class="hover:text-yellow-200 text-xl">Home</a></li>
-                <li><a href="about.html" class="hover:text-yellow-200 text-xl">About</a></li>
-                <li><a href="contact.html" class="hover:text-yellow-200 text-xl">Contact</a></li>
+                <li><a href="../pages/home.html" class="hover:text-yellow-200 text-xl">Home</a></li>
+                <li><a href="../pages/about.html" class="hover:text-yellow-200 text-xl">About</a></li>
+                <li><a href="../pages/contact.html" class="hover:text-yellow-200 text-xl">Contact</a></li>
             </ul>
             <div class="ml-4">
                 <button class="btn btn-neutral btn-outline mr-2">Log In</button>
@@ -53,27 +53,33 @@
         </div>
     </div>
 
-    <div class="hero bg-base-200 min-h-screen pt-8">
-        <div class="hero-content flex-col lg:flex-col w-full max-w-xl px-4">
-            <div class="text-center mb-8">
-                <h1 class="text-4xl md:text-5xl font-bold text-red-700">Contact US</h1>
+    <div class="hero bg-base-200 min-h-screen pt-16">
+        <div class="hero-content flex-col lg:flex-row px-4 md:px-8">
+            <img src="../images/hero.jpg" class="w-full lg:max-w-2xl h-64 md:h-80 lg:h-96 object-cover rounded-lg shadow-2xl" />
+            <div class="mt-6 lg:mt-0 lg:ml-8">
+                <h1 class="text-3xl md:text-4xl lg:text-5xl font-bold text-red-700 mb-4">About Dagag Restaurant</h1>
+                <p class="py-4 leading-relaxed text-sm md:text-base">
+                    At Dagag Restaurant, we believe that great food starts with quality ingredients and passion for
+                    cooking. Our journey began with a simple mission: to serve delicious chicken meals made fresh every
+                    day.
+                    <br><br>
+                    We focus on bold flavors, carefully selected spices, and recipes that bring people together. Whether
+                    you're dining with family or friends, Dagag offers a warm atmosphere where good food meets great
+                    moments.
+                    <br><br>
+                    Our goal is to deliver not just meals, but an experience you'll want to come back to again and
+                    again.
+                </p>
             </div>
-            <div class="card bg-base-100 w-full shrink-0 shadow-2xl">
-                <div class="card-body">
-                    <fieldset class="fieldset">
-                        <label class="label font-bold text-red-700 text-lg">Name</label>
-                        <input type="text" class="input input-bordered w-full" placeholder="Name" />
-                        <label class="label font-bold text-red-700 text-lg">Email</label>
-                        <input type="email" class="input input-bordered w-full" placeholder="Email" />
-                        <label class="label font-bold text-red-700 text-lg">Phone</label>
-                        <input type="tel" class="input input-bordered w-full" placeholder="Phone" />
-                        <label class="label font-bold text-red-700 text-lg">Message</label>
-                        <textarea placeholder="Write your message"
-                            class="textarea textarea-bordered textarea-lg w-full h-32"></textarea>
-                        <button class="btn btn-neutral btn-lg mt-6">Send Message</button>
-                    </fieldset>
-                </div>
-            </div>
+        </div>
+    </div>
+
+    <div class="hero bg-base-200 py-10 flex flex-col">
+        <div>
+            <h1 class="font-bold text-3xl text-orange-700">Our Restaurant</h1>
+        </div>
+        <div class="hero-content flex-col lg:flex-row px-4 md:px-8">
+            <img src="../images/about.jpg" class="w-full max-w-4xl rounded-lg shadow-2xl" />
         </div>
     </div>
 
@@ -81,7 +87,7 @@
         class="footer flex-col md:flex-row footer-center bg-gradient-to-b from-red-600 to-orange-600 text-white pb-2">
         <aside class="text-center mb-6 md:mb-0">
             <aside class="text-center md:mb-0">
-                <img src="logo.png" alt="Dagag Restaurant Logo" class="inline-block w-32 h-32 mx-auto" />
+                <img src="../images/logo.png" alt="Dagag Restaurant Logo" class="inline-block w-32 h-32 mx-auto" />
                 <p class="font-bold text-lg">
                     Dagag Restaurant<br />
                     Serving delicious chicken meals daily
